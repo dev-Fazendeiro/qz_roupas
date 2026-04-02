@@ -1,6 +1,6 @@
 Config = Config or {}
 Config.Auth = Config.Auth or {}
-Config.Auth.Token = Config.Auth.Token or "QZDEV-QZ_ROUPA-UGDZX6RO1B"
+Config.Auth.Token = Config.Auth.Token or "SUA CHAVE KEY AQUI"
 
 --[[
 	qz_roupa - CONFIG
