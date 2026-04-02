@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" href="data:," />
+    <title>Clothing Boutique - Neon Syndicate</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#430036",
+              "error-container": "#9f0519",
+              "surface-variant": "#22262f",
+              "error-dim": "#d7383b",
+              "on-primary-fixed": "#003840",
+              "tertiary-container": "#ff00d4",
+              "surface-tint": "#81ecff",
+              "tertiary-dim": "#ff5ed6",
+              "error": "#ff716c",
+              "secondary-container": "#8c00e5",
+              "on-secondary-fixed": "#500086",
+              "on-error-container": "#ffa8a3",
+              "outline": "#73757d",
+              "on-error": "#490006",
+              "tertiary-fixed": "#ff87da",
+              "on-secondary": "#340059",
+              "outline-variant": "#45484f",
+              "on-tertiary-container": "#0e000a",
+              "on-primary-fixed-variant": "#005762",
+              "surface-container-lowest": "#000000",
+              "on-background": "#ecedf6",
+              "inverse-primary": "#006976",
+              "surface-dim": "#0b0e14",
+              "secondary-fixed": "#e7c5ff",
+              "secondary-dim": "#a533ff",
+              "primary-fixed": "#00e3fd",
+              "on-secondary-fixed-variant": "#7900c6",
+              "tertiary": "#ff5ed6",
+              "surface-bright": "#282c36",
+              "background": "#0b0e14",
+              "on-primary": "#005762",
+              "on-tertiary-fixed": "#34002a",
+              "on-surface-variant": "#a9abb3",
+              "surface-container-low": "#10131a",
+              "primary": "#81ecff",
+              "on-tertiary-fixed-variant": "#6f005b",
+              "primary-container": "#00e3fd",
+              "surface-container-high": "#1c2028",
+              "secondary": "#c47fff",
+              "tertiary-fixed-dim": "#ff6bd7",
+              "primary-fixed-dim": "#00d4ec",
+              "inverse-surface": "#f9f9ff",
+              "surface-container": "#161a21",
+              "primary-dim": "#00d4ec",
+              "on-surface": "#ecedf6",
+              "surface": "#0b0e14",
+              "inverse-on-surface": "#52555c",
+              "secondary-fixed-dim": "#ddb3ff",
+              "surface-container-highest": "#22262f",
+              "on-secondary-container": "#fff5ff",
+              "on-primary-container": "#004d57",
+            },
+            fontFamily: {
+              headline: ["Space Grotesk"],
+              body: ["Manrope"],
+              label: ["Space Grotesk"],
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+          },
+        },
+      };
+    </script>
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="app.js"></script>
+  </head>
+  <body
+    class="bg-transparent text-on-surface font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col"
+  >
+    <main class="flex-grow pt-12 pb-12 px-12">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 border-l-4 border-primary pl-6">
+          <h1 class="font-headline text-5xl font-light tracking-tighter text-on-surface uppercase">
+            QZ <span class="text-primary font-bold">CLOSET</span>
+          </h1>
+        </div>
+        <div id="outfit-carousel" class="relative w-full">
+          <div id="outfit-row" class="flex items-center justify-center gap-8">
+          <div
+            class="outfit-card group relative flex flex-col bg-surface-container-low rounded-xl overflow-hidden ambient-glow transition-all duration-500 hover:translate-y-[-4px] border border-outline-variant/10"
+            data-outfit="fisherman"
+            data-pos="left"
+          >
+            <div class="aspect-[4/5] overflow-hidden relative">
+              <img
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80"
+                data-alt="Rugged fisherman waterproof yellow jacket and boots outfit"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOdHJkaIrDxwWSgfipcNk6HMmF3o51CV2FvMsFcJwcvopJX8TrFEescEkWDSrtyR0OKOnrm6JCEVc0BOm1GRCMQPDd40v9lVT2ogtbAJ4_zCLTjgRp2eQS0i67P5rmdbxhmrXdbkJTCsJshCOmXcnKgFiQVPvUDy-7k7r9DyT6GpFRn3fAi95OH-demj3ZIivcSW_shzCkRs_f-F9KGnBiSl_dgFZsGV6gd-KABguLdp259FNlxjLpgqIiwakpWW9OpUUEHBAfZXs"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+              <div class="absolute top-4 right-4">
+                <span
+                  class="bg-primary/20 text-primary font-label text-[10px] tracking-widest px-3 py-1 rounded-full backdrop-blur-md border border-primary/30 uppercase"
+                >
+                  Utility Grade
+                </span>
+              </div>
+            </div>
+            <div class="p-8 flex flex-col items-center text-center">
+              <h2 class="font-headline text-2xl font-bold text-on-surface mb-3 tracking-tight uppercase">
+                Fisherman Outfit
+              </h2>
+              <p class="font-body text-sm text-on-surface-variant mb-8 leading-relaxed max-w-[240px]">
+                Heavy-duty waterproof layers designed for the harsh winds of the Alamo Sea.
+              </p>
+              <button
+                class="w-full py-4 bg-gradient-to-r from-primary to-primary-dim text-on-primary font-label text-xs tracking-widest uppercase font-bold rounded-md hover:shadow-[0_0_20px_rgba(129,236,255,0.4)] transition-all active:scale-95"
+                data-outfit="fisherman"
+                data-action="select-outfit"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div
+            class="outfit-card group relative flex flex-col bg-surface-container-low rounded-xl overflow-hidden ambient-glow transition-all duration-500 hover:translate-y-[-4px] border border-outline-variant/10"
+            data-outfit="miner"
+            data-pos="middle"
+          >
+            <div class="aspect-[4/5] overflow-hidden relative">
+              <img
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80"
+                data-alt="Durable industrial miner gear with reflective safety vest"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD-7otgtevMBk5mXfA-OSIE0e9jrm1Q7nQILjafECYnpmcwRkJwbVPXmbgMZZruloiNCRlhgZNY_fwBlKsle4flXv562f1Gvh_VC7VNVMucBQ2ipxJYB_XcoBOiOsM8KnwwRHHC0RrEZP05ZmKxOS_gq5BpH0xh7RYgzL4FE5Izg5hmJ2OW1kZUEcPJDU6j0PFweI5jJUV5K3FFkjvCssk_XZfPYAjYNN4LNqDLhVpsu_euwx85PmUQ5ePyzwj3NMH7ckUDBSooP4"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+              <div class="absolute top-4 right-4">
+                <span
+                  class="bg-secondary/20 text-secondary font-label text-[10px] tracking-widest px-3 py-1 rounded-full backdrop-blur-md border border-secondary/30 uppercase"
+                >
+                  Protection Max
+                </span>
+              </div>
+            </div>
+            <div class="p-8 flex flex-col items-center text-center">
+              <h2 class="font-headline text-2xl font-bold text-on-surface mb-3 tracking-tight uppercase">
+                Miner Gear
+              </h2>
+              <p class="font-body text-sm text-on-surface-variant mb-8 leading-relaxed max-w-[240px]">
+                Reinforced fabrics and high-visibility strips for subterranean operations.
+              </p>
+              <button
+                class="w-full py-4 bg-surface-container-highest text-on-surface border border-outline-variant/20 font-label text-xs tracking-widest uppercase font-bold rounded-md hover:bg-surface-bright hover:border-primary/50 transition-all active:scale-95"
+                data-outfit="miner"
+                data-action="select-outfit"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div
+            class="outfit-card group relative flex flex-col bg-surface-container-low rounded-xl overflow-hidden ambient-glow transition-all duration-500 hover:translate-y-[-4px] border border-outline-variant/10"
+            data-outfit="logistics"
+            data-pos="right"
+          >
+            <div class="aspect-[4/5] overflow-hidden relative">
+              <img
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80"
+                data-alt="Modern high-performance logistical driver tactical jumpsuit"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk8pPTKcJpLA0nvge8vaw7NUeMH8jLQg6XnDEw6xU16i7blehVgwXbDHNHgRXgImhsgA5LZZi8woj2Rd8n5KxSzTJXHSq8xD4_VyQ-B5Y3Yi8nmoQcH2tv37B_7rQrXR3sgySFVJM2q8kwRGllJnw9aArIKeIoam5PtDjiCHtsG-x4Eu-zgOcl0u__vmm2S02LcK9JVkt54yOZbdYukfazcyYFw0X3mOf4-fXM-wOTZkfDanr7TIskN_LBLnXwqpelE0Wo7S_4UK4"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+              <div class="absolute top-4 right-4">
+                <span
+                  class="bg-tertiary/20 text-tertiary font-label text-[10px] tracking-widest px-3 py-1 rounded-full backdrop-blur-md border border-tertiary/30 uppercase"
+                >
+                  Efficient Tech
+                </span>
+              </div>
+            </div>
+            <div class="p-8 flex flex-col items-center text-center">
+              <h2 class="font-headline text-2xl font-bold text-on-surface mb-3 tracking-tight uppercase">
+                Logistics Wear
+              </h2>
+              <p class="font-body text-sm text-on-surface-variant mb-8 leading-relaxed max-w-[240px]">
+                Streamlined silhouette with integrated cooling for long-haul shifts.
+              </p>
+              <button
+                class="w-full py-4 bg-surface-container-highest text-on-surface border border-outline-variant/20 font-label text-xs tracking-widest uppercase font-bold rounded-md hover:bg-surface-bright hover:border-primary/50 transition-all active:scale-95"
+                data-outfit="logistics"
+                data-action="select-outfit"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div
+            class="outfit-card group relative flex flex-col bg-surface-container-low rounded-xl overflow-hidden ambient-glow transition-all duration-500 hover:translate-y-[-4px] border border-outline-variant/10"
+            data-outfit="mechanic"
+            data-pos="extra"
+          >
+            <div class="aspect-[4/5] overflow-hidden relative">
+              <img
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80"
+                data-alt="Urban mechanic outfit with durable coveralls and tool belt"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoYlGv3hBvY6Vt6wQmHtzmT8H9q-4oKeaQxWbTBq3WtuJHkq_S3tYH2WmbLro1KfFYHkYlP6Xl7Q1k1YcJ1RzR6aA5Yp1xF4gDk9NQpZ8iL6VQ4RzQzQ"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+              <div class="absolute top-4 right-4">
+                <span
+                  class="bg-secondary/20 text-secondary font-label text-[10px] tracking-widest px-3 py-1 rounded-full backdrop-blur-md border border-secondary/30 uppercase"
+                >
+                  Work Ready
+                </span>
+              </div>
+            </div>
+            <div class="p-8 flex flex-col items-center text-center">
+              <h2 class="font-headline text-2xl font-bold text-on-surface mb-3 tracking-tight uppercase">
+                Mechanic Wear
+              </h2>
+              <p class="font-body text-sm text-on-surface-variant mb-8 leading-relaxed max-w-[240px]">
+                Durable coveralls optimized for mobility and tool handling.
+              </p>
+              <button
+                class="w-full py-4 bg-surface-container-highest text-on-surface border border-outline-variant/20 font-label text-xs tracking-widest uppercase font-bold rounded-md hover:bg-surface-bright hover:border-primary/50 transition-all active:scale-95"
+                data-outfit="mechanic"
+                data-action="select-outfit"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
